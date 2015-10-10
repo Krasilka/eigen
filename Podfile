@@ -108,9 +108,13 @@ target 'Artsy Tests' do
   pod 'Expecta+Snapshots'
   pod 'OHHTTPStubs'
   pod 'XCTest+OHHTTPStubSuiteCleanUp'
-  pod 'Specta'
-  pod 'Expecta'
   pod 'OCMock'
+end
+
+target ‘Acceptance_Tests’, :exclusive => true do
+  pod 'KIF', '~> 3.0', :configurations => ['Debug']
+  pod 'Specta', '~> 1.0'
+  pod 'Expecta'
 end
 
 # Disable bitcode for now. Specifically needed for HockeySDK and ARAnalytics.

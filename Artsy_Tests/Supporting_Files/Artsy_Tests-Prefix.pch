@@ -2,7 +2,7 @@
     // Directly linked pods
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
-    #import <Specta/Specta.h>
+//    #import <Specta/Specta.h>
     #import "SpectaDSL+Sleep.h"
     #import <Expecta/Expecta.h>
     #import <Expecta_Snapshots/EXPMatchers+FBSnapshotTest.h>

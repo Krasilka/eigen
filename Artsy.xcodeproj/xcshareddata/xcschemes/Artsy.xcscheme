@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0510"
+   LastUpgradeVersion = "0700"
    version = "1.7">
    <BuildAction
       parallelizeBuildables = "NO"
@@ -46,19 +46,11 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "B3ECE8251819D1E6009F5C5B"
-               BuildableName = "Artsy Tests.xctest"
-               BlueprintName = "Artsy Tests"
+               BlueprintIdentifier = "1B4409191BC803CB006BD605"
+               BuildableName = "Acceptance_Tests.xctest"
+               BlueprintName = "Acceptance_Tests"
                ReferencedContainer = "container:Artsy.xcodeproj">
             </BuildableReference>
-            <SkippedTests>
-               <Test
-                  Identifier = "ARFavoritesViewControllerSpec/with_artists">
-               </Test>
-               <Test
-                  Identifier = "ARFavoritesViewControllerSpec/with_no_artists">
-               </Test>
-            </SkippedTests>
          </TestableReference>
       </Testables>
       <MacroExpansion>
