@@ -113,7 +113,7 @@ end
 
 target ‘Acceptance_Tests’, :exclusive => true do
   pod 'KIF', '~> 3.0', :configurations => ['Debug']
-  pod 'Specta'
+  pod 'Specta', '~> 1.0'
   pod 'Expecta'
 end
 

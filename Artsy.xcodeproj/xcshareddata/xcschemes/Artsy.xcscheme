@@ -51,11 +51,26 @@
                BlueprintName = "Acceptance_Tests"
                ReferencedContainer = "container:Artsy.xcodeproj">
             </BuildableReference>
-            <SkippedTests>
-               <Test
-                  Identifier = "Acceptance_TestsSpec">
-               </Test>
-            </SkippedTests>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "1B41D2501BCC15240021EA43"
+               BuildableName = "testest.xctest"
+               BlueprintName = "testest"
+               ReferencedContainer = "container:Artsy.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "1B41D2601BCC15470021EA43"
+               BuildableName = "ArtsyUITests.xctest"
+               BlueprintName = "ArtsyUITests"
+               ReferencedContainer = "container:Artsy.xcodeproj">
+            </BuildableReference>
          </TestableReference>
       </Testables>
       <MacroExpansion>
