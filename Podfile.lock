@@ -195,7 +195,7 @@ DEPENDENCIES:
   - ORStackView (from `https://github.com/1aurabrown/ORStackView.git`)
   - ReactiveCocoa
   - SDWebImage
-  - Specta (~> 1.0)
+  - Specta
   - UIAlertView+Blocks
   - UICKeyChainStore
   - UIView+BooleanAnimations

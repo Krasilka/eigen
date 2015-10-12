@@ -63,7 +63,9 @@
     textField.delegate = self;
     [textField ar_extendHitTestSizeByWidth:6 andHeight:16];
     [textField addTarget:self action:@selector(searchTextFieldChanged:) forControlEvents:UIControlEventEditingChanged];
+    textField.accessibilityLabel = @"SearchField";
     _textField = textField;
+    
 
     UIButton *closeButton = [[UIButton alloc] init];
     [searchBoxView addSubview:closeButton];

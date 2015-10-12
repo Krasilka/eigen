@@ -113,9 +113,10 @@ end
 
 target ‘Acceptance_Tests’, :exclusive => true do
   pod 'KIF', '~> 3.0', :configurations => ['Debug']
-  pod 'Specta', '~> 1.0'
+  pod 'Specta'
   pod 'Expecta'
 end
+
 
 # Disable bitcode for now. Specifically needed for HockeySDK and ARAnalytics.
 post_install do |installer|

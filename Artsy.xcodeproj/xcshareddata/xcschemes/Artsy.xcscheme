@@ -51,6 +51,11 @@
                BlueprintName = "Acceptance_Tests"
                ReferencedContainer = "container:Artsy.xcodeproj">
             </BuildableReference>
+            <SkippedTests>
+               <Test
+                  Identifier = "Acceptance_TestsSpec">
+               </Test>
+            </SkippedTests>
          </TestableReference>
       </Testables>
       <MacroExpansion>

@@ -8,98 +8,101 @@
 
 #import <XCTest/XCTest.h>
 #import <KIF/KIF.h>
+#import "Specta/Specta.h"
+#define EXP_SHORTHAND
+#import <Expecta/Expecta.h>
 
 
-@interface Acceptance_Tests : KIFTestCase
+SpecBegin (Acceptance_Tests)
 
-@end
-
-@implementation Acceptance_Tests
-
-- (void) beforeAll {
+describe(@"Acceptance_Tests", ^{
     
-    //In case if you start the test on device and there is alert message with push notifications
-    if ([tester accessibilityElementExists:@"OK"]) {
-        [tester tapViewWithAccessibilityLabel:@"OK"];
-    }
-    //    [UIAlertView alertViewWithTitle:@"" message:@"Submit successfully!" cancelBlock:^(NSInteger buttonIndex) {
-    //    } dismissBlock:nil cancelButtonTitle:@"OK" otherButtonsTitles:nil, nil];
-}
+    //    beforeAll( ^{
+    //              if ([tester accessibilityElementExists:@"SIGN UP"]) {
+    //                  [tester tapViewWithAccessibilityLabel:@"TRY WITHOUT AN ACCOUNT"];
+    //              };
+    //
+    //    });
+    //
+        beforeEach(^{
+    //
+    //        it(@"Navigates to Home page", ^{
+    //            [tester tapViewWithAccessibilityLabel:@"HomeButton"];
+    //            if ([tester accessibilityElementExists:@"EXPLORE"]) {
+    //                expect(@"EXPLORE").to.beTruthy();
+    //            }
+    //            else
+    //                expect([tester accessibilityElementExists:@"CURRENT SHOWS"]).to.equal(YES);
+    //        });
+    //
+    //        it(@"Navigates to Search page", ^{
+                [tester tapViewWithAccessibilityLabel:@"SearchButton"];
+    //            expect(@"Button").to.equal(@"CLOSE");
+    //        });
+    //
+    //        it(@"Clears input search field", ^{
+    //
+    //        });
+        });
+    //
+    
+    
+    it(@"SearchArtwork", ^{
+        
+//        //        navigates to home page
+//        [tester tapViewWithAccessibilityLabel:@"HomeButton"];
+//        
+//        if ([tester accessibilityElementExists:@"EXPLORE"]){
+//            expect([tester accessibilityElementExists:@"CURRENT SHOWS"]).to.equal(YES);
+//        }
+//        else
+//            expect([tester accessibilityElementExists:@"CURRENT SHOWS"]).to.equal(YES);
+//        
+//        
+//        //        navigates to search page
+//        [tester tapViewWithAccessibilityLabel:@"SearchButton"];
+        
+        
+        //        clears text field if needed
+        if ([tester accessibilityElementExists:@"TextfieldClearButton"]) {
+            [tester tapViewWithAccessibilityLabel:@"TextfieldClearButton"];
+        }
+        
+        //        test
+        [tester enterText:@"Double Elvis" intoViewWithAccessibilityLabel:@"SearchField"];
+        [tester tapViewWithAccessibilityLabel:@"Andy Warhol, Double Elvis (1963/1976)"];
+        expect([tester accessibilityElementExists:@"ANDY WARHOL"]).to.equal(YES);
+        expect([tester accessibilityElementExists:@"Double Elvis, 1963/1976"]).to.equal(YES);
+    });
+    
+    
+    it(@"SearchAuthor", ^{
+        
+//        //        navigates to home page
+//        [tester tapViewWithAccessibilityLabel:@"HomeButton"];
+//        if ([tester accessibilityElementExists:@"EXPLORE"]) {
+//        }
+//        else
+//            expect([tester accessibilityElementExists:@"CURRENT SHOWS"]).to.equal(YES);
+//        
+//        //        navigates to search page
+//        [tester tapViewWithAccessibilityLabel:@"SearchButton"];
+//        expect([tester accessibilityElementExists:@"CLOSE"]).to.equal(YES);
+        
+        
+        //        clears text field if needed
+        if ([tester accessibilityElementExists:@"TextfieldClearButton"]) {
+            [tester tapViewWithAccessibilityLabel:@"TextfieldClearButton"];
+        }
+        
+        //        test
+        [tester enterText:@"Kasimir Malevich" intoViewWithAccessibilityLabel:@"SearchField"];
+        [tester tapViewWithAccessibilityLabel:@"Kasimir Severinovich Malevich"];
+        expect([tester accessibilityElementExists:@"KASIMIR SEVERINOVICH MALEVICH"]).to.equal(YES);
+        expect([tester accessibilityElementExists:@"Russian, 1879-1935"]).to.equal(YES);
+        
+    });
+    
+});
 
-- (void) beforeEach {
-    [self navigateToHomePage];
-}
-
-- (void) afterEach {
-    //    Go back to Home page
-    [tester tapViewWithAccessibilityLabel:@"HomeButton"];
-    [self userIsOnHomePage];
-}
-
-- (void) navigateToHomePage {
-    
-    //this is the page only on 1st launch of app for the device
-    if ([tester accessibilityElementExists:@"SIGN UP"]) {
-        [tester tapViewWithAccessibilityLabel:@"TRY WITHOUT AN ACCOUNT"];
-    }
-    [self userIsOnHomePage];
-}
-
-- (void) userIsOnHomePage {
-    //    [self navigateToHomePage];
-    if ([tester accessibilityElementExists:@"EXPLORE"]) {
-    }
-    if ([tester accessibilityElementExists:@"CURRENT SHOWS"]) {
-    }
-}
-
-- (void) navigateToSearchPage {
-    [tester waitForTappableViewWithAccessibilityLabel:@"SearchButton"];
-    [tester tapViewWithAccessibilityLabel:@"SearchButton"]; //search button should have SearchButton acc label, changed it in Artsy --> ViewControllers --> Search--> ARSearchViewController --> added access..Label
-    
-    // Verify that the login succeeded
-    [tester waitForTappableViewWithAccessibilityLabel:@"CLOSE"];
-}
-
-//=======
-// Tests
-//=======
-
-- (void) testSearchForAuthor {
-    
-    [self navigateToHomePage];
-    [self navigateToSearchPage];
-    [tester tapViewWithAccessibilityLabel:@"TextfieldClearButton"];
-    [tester enterTextIntoCurrentFirstResponder:@"Kasimir Malevich"];
-    
-    // Verify that Clear text icon appeared
-    [tester waitForTappableViewWithAccessibilityLabel:@"TextfieldClearButton"];
-    
-    // Verify that suggested search result appeared
-    [tester waitForTappableViewWithAccessibilityLabel:@"Kasimir Severinovich Malevich"];
-    [tester tapViewWithAccessibilityLabel:@"Kasimir Severinovich Malevich"];
-    [tester waitForViewWithAccessibilityLabel:@"KASIMIR SEVERINOVICH MALEVICH"];
-    [tester waitForViewWithAccessibilityLabel:@"Russian, 1879-1935"];
-}
-
-- (void) testSearchForArtwork {
-    
-    [self navigateToHomePage];
-    [self navigateToSearchPage];
-    
-    if ([tester accessibilityElementExists:@"TextfieldClearButton"]) {
-        [tester tapViewWithAccessibilityLabel:@"TextfieldClearButton"];
-    }
-    
-    [tester enterTextIntoCurrentFirstResponder:@"Double Elvis"];
-    
-    // Verify that Clear text icon appeared
-    [tester waitForTappableViewWithAccessibilityLabel:@"TextfieldClearButton"];
-    
-    // Verify that suggested search result appeared
-    [tester waitForTappableViewWithAccessibilityLabel:@"Andy Warhol, Double Elvis (1963/1976)"];
-    [tester tapViewWithAccessibilityLabel:@"Andy Warhol, Double Elvis (1963/1976)"];
-    [tester waitForTappableViewWithAccessibilityLabel:@"ANDY WARHOL"];
-}
-
-@end
+SpecEnd

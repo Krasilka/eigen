@@ -17,7 +17,6 @@
 		0CE3C4361B8BB3630092A24F /* EXPMatcher+UINavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CE3C4341B8BB35C0092A24F /* EXPMatcher+UINavigationController.m */; };
 		0DDDB9AA883FAB97B657CB1B /* Pods_Acceptance_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A88356612490987FBF239244 /* Pods_Acceptance_Tests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		1B44091D1BC803CB006BD605 /* Acceptance_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B44091C1BC803CB006BD605 /* Acceptance_Tests.m */; };
-		1B54ABE71BC8FD870030208D /* ARTestSearchSpecta.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B54ABE61BC8FD870030208D /* ARTestSearchSpecta.m */; settings = {ASSET_TAGS = (); }; };
 		342F902302C1CF0FD342AB93 /* NSDate+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 342F97C153D8524B132D0927 /* NSDate+Util.m */; };
 		342F9061CC93426E7F8579A2 /* ARFeedImageLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 342F966C989CF0BE97711FB6 /* ARFeedImageLoader.m */; };
 		342F906FD605E75158D32876 /* ARSharingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 342F9DC4018D17E7378DA607 /* ARSharingController.m */; };
@@ -647,8 +646,6 @@
 		1B44091A1BC803CB006BD605 /* Acceptance_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Acceptance_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B44091C1BC803CB006BD605 /* Acceptance_Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Acceptance_Tests.m; sourceTree = "<group>"; };
 		1B44091E1BC803CB006BD605 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1B54ABE51BC8FD870030208D /* ARTestSearchSpecta.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARTestSearchSpecta.h; sourceTree = "<group>"; };
-		1B54ABE61BC8FD870030208D /* ARTestSearchSpecta.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARTestSearchSpecta.m; sourceTree = "<group>"; };
 		219F7A9F64EBC1323D60D7CD /* Pods-Acceptance_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Acceptance_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Acceptance_Tests/Pods-Acceptance_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		29773A6F17B9749800FC89B3 /* ARHasImageBaseURL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARHasImageBaseURL.h; sourceTree = "<group>"; };
 		342F9005B8C4E89F9DA89E36 /* NSString+StringCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+StringCase.h"; sourceTree = "<group>"; };
@@ -1464,9 +1461,14 @@
 		60FFE3DC188E91F20012B485 /* getting_confident.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = getting_confident.md; sourceTree = "<group>"; };
 		60FFE3DD188E921A0012B485 /* eigen_tips.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = eigen_tips.md; sourceTree = "<group>"; };
 		631273B5F76AA177A0D6C949 /* Pods_Artsy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Artsy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		65F1302B4710D35E74FA99E8 /* Pods-SpectaTests.demo.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpectaTests.demo.xcconfig"; path = "Pods/Target Support Files/Pods-SpectaTests/Pods-SpectaTests.demo.xcconfig"; sourceTree = "<group>"; };
+		69A7AFC09D129690B5419F36 /* Pods-SpectaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpectaTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SpectaTests/Pods-SpectaTests.debug.xcconfig"; sourceTree = "<group>"; };
 		83F9D57E1AD6FDE0000BCC77 /* Location.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Location.h; sourceTree = "<group>"; };
 		83F9D57F1AD6FDE0000BCC77 /* Location.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Location.m; sourceTree = "<group>"; };
+		8C1C265131DF5FFE8FB22971 /* Pods-SpectaTests.store.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpectaTests.store.xcconfig"; path = "Pods/Target Support Files/Pods-SpectaTests/Pods-SpectaTests.store.xcconfig"; sourceTree = "<group>"; };
+		8CB40BFA71D6208D7E2F107A /* Pods_SpectaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpectaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CE6A4297267F0288822CB76 /* Pods_Artsy_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Artsy_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		924433F374BACE336EE16466 /* Pods-SpectaTests.beta.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpectaTests.beta.xcconfig"; path = "Pods/Target Support Files/Pods-SpectaTests/Pods-SpectaTests.beta.xcconfig"; sourceTree = "<group>"; };
 		9434A9843098609F9F092F0D /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BEDEECE6D89A7273A600C4B /* Pods-Artsy Tests.beta.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Artsy Tests.beta.xcconfig"; path = "Pods/Target Support Files/Pods-Artsy Tests/Pods-Artsy Tests.beta.xcconfig"; sourceTree = "<group>"; };
 		A88356612490987FBF239244 /* Pods_Acceptance_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Acceptance_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1748,8 +1750,6 @@
 			children = (
 				1B44091C1BC803CB006BD605 /* Acceptance_Tests.m */,
 				1B44091E1BC803CB006BD605 /* Info.plist */,
-				1B54ABE51BC8FD870030208D /* ARTestSearchSpecta.h */,
-				1B54ABE61BC8FD870030208D /* ARTestSearchSpecta.m */,
 			);
 			path = Acceptance_Tests;
 			sourceTree = "<group>";
@@ -2409,6 +2409,10 @@
 				C74021EB68730DA0BF070F35 /* Pods-Acceptance_Tests.beta.xcconfig */,
 				BC88DA692535B76EF1F9E163 /* Pods-Acceptance_Tests.store.xcconfig */,
 				DF7BDD4952EB1A6AA9CEE4C9 /* Pods-Acceptance_Tests.demo.xcconfig */,
+				69A7AFC09D129690B5419F36 /* Pods-SpectaTests.debug.xcconfig */,
+				924433F374BACE336EE16466 /* Pods-SpectaTests.beta.xcconfig */,
+				8C1C265131DF5FFE8FB22971 /* Pods-SpectaTests.store.xcconfig */,
+				65F1302B4710D35E74FA99E8 /* Pods-SpectaTests.demo.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -2585,6 +2589,7 @@
 				631273B5F76AA177A0D6C949 /* Pods_Artsy.framework */,
 				8CE6A4297267F0288822CB76 /* Pods_Artsy_Tests.framework */,
 				A88356612490987FBF239244 /* Pods_Acceptance_Tests.framework */,
+				8CB40BFA71D6208D7E2F107A /* Pods_SpectaTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -4535,7 +4540,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1B54ABE71BC8FD870030208D /* ARTestSearchSpecta.m in Sources */,
 				1B44091D1BC803CB006BD605 /* Acceptance_Tests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -5094,6 +5098,13 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"\"$(PLATFORM_DIR)/Developer/Library/Frameworks\"",
+					/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/Frameworks,
+					"\"$(DEVELOPER_DIR)/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks\"",
+				);
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -5137,6 +5148,13 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"\"$(PLATFORM_DIR)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_DIR)/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks\"",
+					/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/Frameworks,
+				);
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -5180,6 +5198,13 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"\"$(PLATFORM_DIR)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_DIR)/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks\"",
+					/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/Frameworks,
+				);
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -5223,6 +5248,13 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"\"$(PLATFORM_DIR)/Developer/Library/Frameworks\"",
+					/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/Frameworks,
+					"\"$(DEVELOPER_DIR)/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks\"",
+				);
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
