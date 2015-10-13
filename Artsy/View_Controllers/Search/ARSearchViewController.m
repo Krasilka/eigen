@@ -43,6 +43,8 @@
     searchIcon.contentMode = UIViewContentModeScaleAspectFit;
     [searchBoxView addSubview:searchIcon];
     searchIcon.accessibilityLabel = @"SearchButton";
+    searchIcon.isAccessibilityElement = YES;
+    searchIcon.userInteractionEnabled = YES;
     _searchIcon = searchIcon;
 
     [searchIcon alignLeadingEdgeWithView:searchBoxView predicate:@"10"];
