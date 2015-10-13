@@ -1,49 +1,49 @@
 PODS:
-  - Adjust (4.2.7):
-    - Adjust/Core (= 4.2.7)
-  - Adjust/Core (4.2.7)
+  - Adjust (4.3.0):
+    - Adjust/Core (= 4.3.0)
+  - Adjust/Core (4.3.0)
   - AFNetworkActivityLogger (2.0.4):
     - AFNetworking/NSURLConnection (~> 2.0)
     - AFNetworking/NSURLSession (~> 2.0)
-  - AFNetworking (2.5.4):
-    - AFNetworking/NSURLConnection (= 2.5.4)
-    - AFNetworking/NSURLSession (= 2.5.4)
-    - AFNetworking/Reachability (= 2.5.4)
-    - AFNetworking/Security (= 2.5.4)
-    - AFNetworking/Serialization (= 2.5.4)
-    - AFNetworking/UIKit (= 2.5.4)
-  - AFNetworking/NSURLConnection (2.5.4):
+  - AFNetworking (2.6.0):
+    - AFNetworking/NSURLConnection (= 2.6.0)
+    - AFNetworking/NSURLSession (= 2.6.0)
+    - AFNetworking/Reachability (= 2.6.0)
+    - AFNetworking/Security (= 2.6.0)
+    - AFNetworking/Serialization (= 2.6.0)
+    - AFNetworking/UIKit (= 2.6.0)
+  - AFNetworking/NSURLConnection (2.6.0):
     - AFNetworking/Reachability
     - AFNetworking/Security
     - AFNetworking/Serialization
-  - AFNetworking/NSURLSession (2.5.4):
+  - AFNetworking/NSURLSession (2.6.0):
     - AFNetworking/Reachability
     - AFNetworking/Security
     - AFNetworking/Serialization
-  - AFNetworking/Reachability (2.5.4)
-  - AFNetworking/Security (2.5.4)
-  - AFNetworking/Serialization (2.5.4)
-  - AFNetworking/UIKit (2.5.4):
+  - AFNetworking/Reachability (2.6.0)
+  - AFNetworking/Security (2.6.0)
+  - AFNetworking/Serialization (2.6.0)
+  - AFNetworking/UIKit (2.6.0):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
   - AFOAuth1Client (0.4.0):
     - AFNetworking (~> 2.5)
-  - ALPValidator (0.0.3)
-  - Analytics/Core-iOS (2.0.6):
+  - ALPValidator (0.0.6)
+  - Analytics/Core-iOS (2.0.13):
     - TRVSDictionaryWithCaseInsensitivity (= 0.0.2)
-  - Analytics/Segmentio (2.0.6):
+  - Analytics/Segmentio (2.0.13):
     - Analytics/Core-iOS
-  - ARAnalytics/Adjust (3.6.2):
+  - ARAnalytics/Adjust (3.8.0):
     - Adjust
     - ARAnalytics/CoreIOS
-  - ARAnalytics/CoreIOS (3.6.2)
-  - ARAnalytics/DSL (3.6.2):
+  - ARAnalytics/CoreIOS (3.8.0)
+  - ARAnalytics/DSL (3.8.0):
     - ReactiveCocoa (~> 2.0)
     - RSSwizzle (~> 0.1.0)
-  - ARAnalytics/HockeyApp (3.6.2):
+  - ARAnalytics/HockeyApp (3.8.0):
     - ARAnalytics/CoreIOS
     - HockeySDK-Source
-  - ARAnalytics/Segmentio (3.6.2):
+  - ARAnalytics/Segmentio (3.8.0):
     - Analytics/Segmentio
     - ARAnalytics/CoreIOS
   - ARASCIISwizzle (1.1.0)
@@ -59,87 +59,103 @@ PODS:
   - Artsy-UIButtons (1.4.0):
     - Artsy+UIColors
     - UIView+BooleanAnimations
-  - Bolts (1.2.0):
-    - Bolts/AppLinks (= 1.2.0)
-    - Bolts/Tasks (= 1.2.0)
-  - Bolts/AppLinks (1.2.0):
+  - Bolts (1.3.0):
+    - Bolts/AppLinks (= 1.3.0)
+    - Bolts/Tasks (= 1.3.0)
+  - Bolts/AppLinks (1.3.0):
     - Bolts/Tasks
-  - Bolts/Tasks (1.2.0)
-  - CocoaLumberjack (2.0.1):
-    - CocoaLumberjack/Default (= 2.0.1)
-    - CocoaLumberjack/Extensions (= 2.0.1)
-  - CocoaLumberjack/Core (2.0.1)
-  - CocoaLumberjack/Default (2.0.1):
+  - Bolts/Tasks (1.3.0)
+  - CocoaLumberjack (2.1.0-beta):
+    - CocoaLumberjack/Default (= 2.1.0-beta)
+    - CocoaLumberjack/Extensions (= 2.1.0-beta)
+  - CocoaLumberjack/Core (2.1.0-beta)
+  - CocoaLumberjack/Default (2.1.0-beta):
     - CocoaLumberjack/Core
-  - CocoaLumberjack/Extensions (2.0.1):
+  - CocoaLumberjack/Extensions (2.1.0-beta):
     - CocoaLumberjack/Default
   - DHCShakeNotifier (0.2.0)
-  - DRKonamiCode (1.1.0)
+  - DRKonamiCode (1.1.1)
   - EDColor (0.4.0)
-  - Expecta (1.0.0)
-  - Expecta+Snapshots (1.3.4):
+  - Expecta (1.0.3)
+  - Expecta+Snapshots (2.0.0):
     - Expecta (~> 1.0)
-    - FBSnapshotTestCase (~> 1.8)
-  - FBSDKCoreKit (4.2.0):
+    - FBSnapshotTestCase/Core (~> 2.0.3)
+  - FBSDKCoreKit (4.7.0):
     - Bolts (~> 1.1)
-    - FBSDKCoreKit/arc (= 4.2.0)
-    - FBSDKCoreKit/no-arc (= 4.2.0)
-  - FBSDKCoreKit/arc (4.2.0):
+    - FBSDKCoreKit/arc (= 4.7.0)
+    - FBSDKCoreKit/no-arc (= 4.7.0)
+  - FBSDKCoreKit/arc (4.7.0):
     - Bolts (~> 1.1)
-  - FBSDKCoreKit/no-arc (4.2.0):
+  - FBSDKCoreKit/no-arc (4.7.0):
     - Bolts (~> 1.1)
     - FBSDKCoreKit/arc
-  - FBSDKLoginKit (4.2.0):
+  - FBSDKLoginKit (4.7.0):
     - FBSDKCoreKit
-  - FBSnapshotTestCase (1.8.1)
+  - FBSnapshotTestCase (2.0.4):
+    - FBSnapshotTestCase/SwiftSupport (= 2.0.4)
+  - FBSnapshotTestCase/Core (2.0.4)
+  - FBSnapshotTestCase/SwiftSupport (2.0.4):
+    - FBSnapshotTestCase/Core
   - FLKAutoLayout (0.2.1)
   - FODFormKit (0.1.1)
-  - FXBlurView (1.6.1)
-  - HockeySDK-Source (3.7.1)
+  - FXBlurView (1.6.4)
+  - HockeySDK-Source (3.8.2)
   - InterAppCommunication (1.0)
-  - iRate (1.10.2)
+  - iRate (1.11.4)
   - ISO8601DateFormatter (HEAD based on 0.7)
-  - JLRoutes (1.5)
+  - JLRoutes (1.5.3)
   - JSBadgeView (1.4.1)
-  - JSDecoupledAppDelegate (1.1.0)
+  - JSDecoupledAppDelegate (1.2.0)
   - Keys (1.0.0)
   - KIF (3.3.0):
     - KIF/Core (= 3.3.0)
   - KIF/Core (3.3.0)
-  - KSDeferred (0.2.0)
-  - libextobjc/EXTKeyPathCoding (0.4):
+  - KSDeferred (0.3.0)
+  - libextobjc/EXTKeyPathCoding (0.4.1):
     - libextobjc/RuntimeExtensions
-  - libextobjc/RuntimeExtensions (0.4)
+  - libextobjc/RuntimeExtensions (0.4.1)
   - Mantle (1.5.3):
     - Mantle/extobjc (= 1.5.3)
   - Mantle/extobjc (1.5.3)
-  - MMMarkdown (0.4)
-  - MultiDelegate (0.0.2)
+  - MMMarkdown (0.5)
+  - MultiDelegate (0.0.4)
   - NAMapKit (3.1.1):
     - ARTiledImageView
     - SDWebImage
   - NPKeyboardLayoutGuide (1.0.0)
   - ObjectiveSugar (1.1.0)
-  - OCMock (2.2.4)
-  - OHHTTPStubs (3.1.2)
+  - OCMock (3.2)
+  - OHHTTPStubs (4.3.0):
+    - OHHTTPStubs/Default (= 4.3.0)
+  - OHHTTPStubs/Core (4.3.0)
+  - OHHTTPStubs/Default (4.3.0):
+    - OHHTTPStubs/Core
+    - OHHTTPStubs/JSON
+    - OHHTTPStubs/NSURLSession
+    - OHHTTPStubs/OHPathHelpers
+  - OHHTTPStubs/JSON (4.3.0):
+    - OHHTTPStubs/Core
+  - OHHTTPStubs/NSURLSession (4.3.0):
+    - OHHTTPStubs/Core
+  - OHHTTPStubs/OHPathHelpers (4.3.0)
   - ORKeyboardReactingApplication (0.5.3)
   - ORStackView (2.0.0):
     - FLKAutoLayout (~> 0.1)
-  - ReactiveCocoa (2.3):
-    - ReactiveCocoa/UI (= 2.3)
-  - ReactiveCocoa/Core (2.3):
+  - ReactiveCocoa (2.5):
+    - ReactiveCocoa/UI (= 2.5)
+  - ReactiveCocoa/Core (2.5):
     - ReactiveCocoa/no-arc
-  - ReactiveCocoa/no-arc (2.3)
-  - ReactiveCocoa/UI (2.3):
+  - ReactiveCocoa/no-arc (2.5)
+  - ReactiveCocoa/UI (2.5):
     - ReactiveCocoa/Core
   - RSSwizzle (0.1.0)
-  - SDWebImage (3.7.1):
-    - SDWebImage/Core (= 3.7.1)
-  - SDWebImage/Core (3.7.1)
-  - Specta (1.0.3)
+  - SDWebImage (3.7.3):
+    - SDWebImage/Core (= 3.7.3)
+  - SDWebImage/Core (3.7.3)
+  - Specta (1.0.4)
   - TRVSDictionaryWithCaseInsensitivity (0.0.2)
-  - UIAlertView+Blocks (0.8)
-  - UICKeyChainStore (1.0.5)
+  - UIAlertView+Blocks (0.9)
+  - UICKeyChainStore (2.0.6)
   - UIView+BooleanAnimations (1.0.2)
   - VCRURLConnection (0.2.0)
   - XCTest+OHHTTPStubSuiteCleanUp (1.0.0):
@@ -183,7 +199,7 @@ DEPENDENCIES:
   - KIF (~> 3.0)
   - KSDeferred
   - libextobjc/EXTKeyPathCoding
-  - Mantle
+  - Mantle (= 1.5.3)
   - MMMarkdown
   - MultiDelegate
   - NAMapKit (from `https://github.com/neilang/NAMapKit`, commit `62275386978db91b0e7ed8de755d15cef3e793b4`)
@@ -232,10 +248,10 @@ CHECKOUT OPTIONS:
     :commit: 1a31b864d1d56b1aaed0816c10bb55cf2e078bb8
     :git: https://github.com/dblock/ARTiledImageView
   CocoaLumberjack:
-    :commit: a09dd37888d9f51159c4926d4280794f915d726c
+    :commit: 09f27fbc1227ff207b727d638edd533bd9b17589
     :git: https://github.com/CocoaLumberjack/CocoaLumberjack.git
   FLKAutoLayout:
-    :commit: dd2cd4fe901ff5dcfc47c2c29c7746779fc12b64
+    :commit: 96d9de47afde9ff2d13c25275415677cdbf4520d
     :git: https://github.com/alloy/FLKAutoLayout.git
   FODFormKit:
     :commit: 4607940c98a3200fbc0414577b74f511c9a5774d
@@ -248,13 +264,13 @@ CHECKOUT OPTIONS:
     :git: https://github.com/1aurabrown/ORStackView.git
 
 SPEC CHECKSUMS:
-  Adjust: 2c3d4db6047c6bba68d7c5ede63fbdc989eb57b7
+  Adjust: b9efb9de555474ab5bc0f331842280f0bc7a25fd
   AFNetworkActivityLogger: 121486778117d53b3ab1c61d264b88081d0c3eee
-  AFNetworking: 05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e
+  AFNetworking: 79f7eb1a0fcfa7beb409332b2ca49afe9ce53b05
   AFOAuth1Client: 07ccc935ba06ac8d023c16d39a5bdf04bc6f92e1
-  ALPValidator: c74ea0d49bbbff0f8a4228f1eb6589b992255cfe
-  Analytics: 5edafd4c09d14c3002c754bfdde5535dc3b1320f
-  ARAnalytics: 697797d915d0afadf27f79563b262557cbe3d378
+  ALPValidator: 4460fb6c1cb92b96c4a1a097721b5c1af8097a98
+  Analytics: c2c324f98edbe2b1bbf8736444d2256161191245
+  ARAnalytics: 5468652928cee7100dd0e6b5162631409da37106
   ARASCIISwizzle: 4800c50a918bdc06f6304020e348ef8c15c554ee
   ARCollectionViewMasonryLayout: 776730bdedd0c7570a5e904c370e4e120f98ea62
   ARGenericTableViewController: 61a0897ba66c35111b5d1cc3b44884282bd3c1a5
@@ -263,47 +279,47 @@ SPEC CHECKSUMS:
   Artsy+UIColors: 7a4c987885a8d8da3e22672a3232761f929dd2b6
   Artsy+UILabels: 7efedaf4487a2545c750beaa29cb74db5de39d7f
   Artsy-UIButtons: 6f67de2a5285f18acb5d0e2919d1b17188acbc27
-  Bolts: d176cb1e0012175589e389a9db49b85e27787576
-  CocoaLumberjack: 27ae9abcd376c3e4ee726ecd4adfd7b093ddef3f
+  Bolts: 805a4a87413e49d4a0c2b7d469084cbc46b09342
+  CocoaLumberjack: 89ff78bbc0723eec8f761f1274993e0699facab8
   DHCShakeNotifier: 64048427ecaa763f2472d0032f58bf7a10074eee
-  DRKonamiCode: 94439de24e8264b4f553c775f055e964675af4b6
+  DRKonamiCode: 9e8f60c7a87fbc2fb9f58d6a67e37b17ad40123d
   EDColor: 89d19a013279a5604d61650721c15f20fefaaf00
-  Expecta: 32604574add2c46a36f8d2f716b6c5736eb75024
-  Expecta+Snapshots: ca15bfb57e7a0f78f86c7699c2c54ffacfa4ad2a
-  FBSDKCoreKit: 84b3616a361801f190e43a9909caead7bb6087c7
-  FBSDKLoginKit: 57e37106af12c9e264e473dcb75d7decdbb07fe4
-  FBSnapshotTestCase: 3dc3899168747a0319c5278f5b3445c13a6532dd
+  Expecta: 9d1bff6c8b0eeee73a166a2ee898892478927a15
+  Expecta+Snapshots: 29b38dd695bc72a0ed2bea833937d78df41943ba
+  FBSDKCoreKit: eb580bfc2040ad44f4c0b4f4d0befb1d35bce59c
+  FBSDKLoginKit: 01bce8dd3f3a26a023b0ba4ffdde7ef5062889fe
+  FBSnapshotTestCase: d94cf34841c9e77390e29009e8e2713479d48753
   FLKAutoLayout: 9db6b30c2008d230da608e62c607b11c23b942e6
   FODFormKit: 71e58c63b3ca279616671ab087fd721facf53a78
-  FXBlurView: 5121730176fd52bcf7bffd0bd8c1485e8aabc3cb
-  HockeySDK-Source: d620f330b23691017c141de6e25e5cdc8c67848c
+  FXBlurView: db786c2561cb49a09ae98407f52460096ab8a44f
+  HockeySDK-Source: 42b2ead932f97de6b88bed9d1aa2a13b2e6e21ad
   InterAppCommunication: 3239945b30e9dc5f91ef8be057fbcae4e3398e5c
-  iRate: 18fd2d3bd7d2ab01dcd801098cc2f5cbe9f25ffb
+  iRate: 599ed07c854e0695f3c605d1b2a64c67d912acb7
   ISO8601DateFormatter: ab926648eebe497f4d167c0fd083992f959f1274
-  JLRoutes: 5a6096ec514f105fc906f9334c90d8276fe13687
+  JLRoutes: 20555d00693855b71e80715eeaae6a930a33b2f5
   JSBadgeView: 3861ddee41094284d9468e6d0af5107f703aaac5
-  JSDecoupledAppDelegate: ec2e9480b893fa27ba3db5b12d51a6d5803c550b
+  JSDecoupledAppDelegate: 5905e144cbe6e0c889248eebbee6784510f315e1
   Keys: 7d2ff6ff42f6903358267ce56e9392f83c31acfe
   KIF: 0a82046d06f3648799cac522d2d0f7934214caac
-  KSDeferred: e72d005162986b2978e1e2eee17fbce1c6876cfe
-  libextobjc: f2802d4262f6885570df9799747409ceb1de602c
+  KSDeferred: 7bb8156c988ed2a5e40111521d34dfb7a0390d23
+  libextobjc: a650fc1bf489a3d3a9bc2e621efa3e1006fc5471
   Mantle: 7dddb082367d3e13bd244636d56838481c4552fe
-  MMMarkdown: 44f1c5216cfcd70bc0e076b0f91876d6323a73b8
-  MultiDelegate: d224a4af1c098e1de280c3eaee2f16ebf8b046f4
+  MMMarkdown: 74e6a040d7c41419d86c0ec22b2a49755a10e0fd
+  MultiDelegate: 228e2321b74f45ea43ae19c268fdd60fd88d99b7
   NAMapKit: 4f57bea305c1795d2d6b8a6d6b31c59b1a08114f
   NPKeyboardLayoutGuide: fea27700582570c8825a97b5cb96579a57bf0b73
   ObjectiveSugar: a6a25f23d657c19df0a0b972466d5b5ca9f5295c
-  OCMock: a6a7dc0e3997fb9f35d99f72528698ebf60d64f2
-  OHHTTPStubs: c93230597bc5c8b74bcfdb403cc8773515b8b08c
+  OCMock: 28def049ef47f996b515a8eeea958be7ccab2dbb
+  OHHTTPStubs: 0aec5755528693a165bd616cb79f69387de306a8
   ORKeyboardReactingApplication: 05af5ead40af968d5423d54b6a0dc050858b0e82
   ORStackView: 752d81ca2e2a0bd6c01a2ece30fd24923434be1e
-  ReactiveCocoa: fbe689fe218063b7bbed41032912c9ca4fdbe172
+  ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
   RSSwizzle: d561958f595028bfcef98c7d55c318b3878a61c6
-  SDWebImage: ed3095af2ff88b436426037444979b917f6c5575
-  Specta: cf3e4188cf35375c3ee2cd03f8db8f1f4ef98234
+  SDWebImage: 1d2b1a1efda1ade1b00b6f8498865f8ddedc8a84
+  Specta: 69bb134672aae190a1379ff91df07dad8dd1f869
   TRVSDictionaryWithCaseInsensitivity: 51d2ccf52c6d645d27b63467a98fa02c556e01b0
-  UIAlertView+Blocks: 6b408d63507287b22c6e631a2b25ca26f96fb609
-  UICKeyChainStore: e81dc3b58d56ffaed61ab6669eb97071e53fc377
+  UIAlertView+Blocks: a46c99c5144f6c5dbc7d62fd2a0678daceec89a3
+  UICKeyChainStore: c5719c814e8bd69e74e4a0fc09daf8f4d6257a59
   UIView+BooleanAnimations: a760be9a066036e55f298b7b7350a6cb14cfcd97
   VCRURLConnection: accd771ebd4be11183a3e4d5a4403f180a9a235e
   XCTest+OHHTTPStubSuiteCleanUp: 4469ec8863c6bc022c5089a9b94233eb3416c5ee

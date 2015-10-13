@@ -11,37 +11,41 @@
 #import "Specta/Specta.h"
 #define EXP_SHORTHAND
 #import <Expecta/Expecta.h>
+#import "KIFUITestActor+Helper.h"
 
 SpecBegin (Acceptance_Tests)
 
 describe(@"Acceptance_Tests", ^{
     
     beforeAll( ^{
-                  if ([tester accessibilityElementExists:@"SIGN UP"]) {
-                      [tester tapViewWithAccessibilityLabel:@"TRY WITHOUT AN ACCOUNT"];
-                  };
+         if ([[[UIApplication sharedApplication] keyWindow] accessibilityElementWithLabel:@"SIGN UP"]) {
+            [tester tapViewWithAccessibilityLabel:@"TRY WITHOUT AN ACCOUNT"];
+         };
     
     });
     
+    
     beforeEach( ^{
          [tester waitForViewWithAccessibilityLabel:@"HomeButton"];
-                         if ([tester accessibilityElementExists:@"EXPLORE"]) {
+                         if ([[[UIApplication sharedApplication] keyWindow] accessibilityElementWithLabel:@"EXPLORE"]) {
+//
                              expect([tester accessibilityElementExists:@"EXPLORE"]).to.equal(YES);
                          };
-                        if ([tester accessibilityElementExists:@"CURRENT SHOWS"]) {
+                        if ([[[UIApplication sharedApplication] keyWindow] accessibilityElementWithLabel:@"CURRENT SHOWS"]) {
                             expect([tester accessibilityElementExists:@"CURRENT SHOWS"]).to.equal(YES);
                         };
         
          [tester waitForViewWithAccessibilityLabel:@"SearchButton"];
          [tester tapViewWithAccessibilityLabel:@"SearchButton"];
          expect([tester accessibilityElementExists:@"CLOSE"]).to.equal(YES);
-         if ([tester accessibilityElementExists:@"TextfieldClearButton"]) {
+        
+         if ([[[UIApplication sharedApplication] keyWindow] accessibilityElementWithLabel:@"TextfieldClearButton"]) {
              [tester tapViewWithAccessibilityLabel:@"TextfieldClearButton"];
          };
          
     });
-    
-    
+
+
     it(@"SearchArtwork", ^{
         
         [tester enterText:@"Double Elvis" intoViewWithAccessibilityLabel:@"SearchField"];

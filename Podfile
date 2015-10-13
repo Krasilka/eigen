@@ -47,7 +47,7 @@ target 'Artsy' do
   pod 'JLRoutes'
   pod 'JSBadgeView'
   pod 'JSDecoupledAppDelegate'
-  pod 'Mantle'
+  pod 'Mantle', '1.5.3'
   pod 'MMMarkdown'
   pod 'NPKeyboardLayoutGuide'
   pod 'ReactiveCocoa'
@@ -111,7 +111,7 @@ target 'Artsy Tests' do
   pod 'OCMock'
 end
 
-target ‘Acceptance_Tests’, :exclusive => true do
+target 'Acceptance_Tests', :exclusive => true do
   pod 'KIF', '~> 3.0', :configurations => ['Debug']
   pod 'Specta', '~> 1.0'
   pod 'Expecta'
