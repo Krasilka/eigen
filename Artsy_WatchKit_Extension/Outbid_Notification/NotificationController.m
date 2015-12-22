@@ -33,6 +33,7 @@
     });
 
     [self.artistNameLabel setText:remoteNotification[@"aps"][@"artwork_artist"]];
+    [self.artistNameLabel setAccessibilityLabel:@"Artist Of Artwork"];
     [self.artworkTitleLabel setText:remoteNotification[@"aps"][@"artwork_title"]];
 
     ARWatchBidDetails = [[WatchBiddingDetails alloc] initWithDictionary:remoteNotification[@"aps"]];

@@ -20,6 +20,7 @@
     _loaded = YES;
 
     [self.artistNameLabel setText:self.artwork.artistName.uppercaseString];
+    [self.artistNameLabel setAccessibilityLabel:@"Artist Of Artwork"];
     [self.artworkTitleLabel setAttributedText:self.artwork.titleAndDateAttributedString];
     [self.mainImage ar_asyncSetImageURL:self.artwork.thumbnailImageURL];
 }

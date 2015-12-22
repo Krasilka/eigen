@@ -67,9 +67,11 @@
     [textField ar_extendHitTestSizeByWidth:6 andHeight:16];
     [textField addTarget:self action:@selector(searchTextFieldChanged:) forControlEvents:UIControlEventEditingChanged];
     textField.accessibilityLabel = @"SearchField";
+    textField.isAccessibilityElement = YES;
+    textField.userInteractionEnabled = YES;
     _textField = textField;
     
-
+    // close button
     UIButton *closeButton = [[UIButton alloc] init];
     [searchBoxView addSubview:closeButton];
     [closeButton constrainLeadingSpaceToView:textField predicate:@"14"];
@@ -345,6 +347,7 @@
         tableView.backgroundColor = [UIColor clearColor];
         tableView.opaque = NO;
         tableView.alpha = 0;
+        tableView.accessibilityIdentifier = @"SearchResultsTableView";
 
         [self stopSearching];
 

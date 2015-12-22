@@ -153,8 +153,9 @@ typedef NS_ENUM(NSInteger, ARDetailSubViewOrder) {
     if (hasArtist) {
         ARItalicsSerifLabelWithChevron *artistNameLabel = [self viewFor:ARDetailArtistName];
         artistNameLabel.text = artwork.artist.name.uppercaseString;
-
+        artistNameLabel.accessibilityLabel = @"Artist Of Artwork";
         artistNameLabel.userInteractionEnabled = YES;
+        
         UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(openArtworkArtist:)];
         [artistNameLabel addGestureRecognizer:tapGesture];
 

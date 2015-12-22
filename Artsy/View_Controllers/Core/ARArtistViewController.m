@@ -134,10 +134,12 @@ typedef NS_ENUM(NSInteger, ARArtistArtworksDisplayMode) {
 - (void)viewDidLoad
 {
     self.nameLabel = [self.view.stackView addPageTitleWithString:@"" tag:ARArtistViewArtistName];
+    self.nameLabel.accessibilityLabel = @"Artist Full Name";
     self.infoLabel = [ARThemedFactory labelForBodyText];
     self.infoLabel.textAlignment = NSTextAlignmentCenter;
     [self.infoLabel constrainHeight:@"16"];
     self.infoLabel.tag = ARArtistViewArtistInfo;
+    self.infoLabel.accessibilityLabel = @"Artist Info";
     [self.view.stackView addSubview:self.infoLabel withTopMargin:@"4" sideMargin:[self sideMarginString]];
 
     UIView *actionsWrapper = [[UIView alloc] init];
