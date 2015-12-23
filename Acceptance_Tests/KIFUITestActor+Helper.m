@@ -1,10 +1,7 @@
-//
 //  KIFUITestActor+Helper.m
 //  Pods
 //
 //  Created by Kondel Iryna on 10/9/15.
-//
-//
 
 #import "KIFUITestActor+Helper.h"
 #import "UIAccessibilityElement-KIFAdditions.h"

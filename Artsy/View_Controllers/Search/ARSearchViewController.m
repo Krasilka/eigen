@@ -348,6 +348,7 @@
         tableView.opaque = NO;
         tableView.alpha = 0;
         tableView.accessibilityIdentifier = @"SearchResultsTableView";
+        tableView.accessibilityLabel = @"SearchResultsTableView";
 
         [self stopSearching];
 

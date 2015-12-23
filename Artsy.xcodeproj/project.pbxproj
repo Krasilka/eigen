@@ -17,7 +17,6 @@
 		0CE3C4361B8BB3630092A24F /* EXPMatcher+UINavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CE3C4341B8BB35C0092A24F /* EXPMatcher+UINavigationController.m */; };
 		0DDDB9AA883FAB97B657CB1B /* Pods_Acceptance_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A88356612490987FBF239244 /* Pods_Acceptance_Tests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		1B44091D1BC803CB006BD605 /* Acceptance_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B44091C1BC803CB006BD605 /* Acceptance_Tests.m */; };
-		1BACB0C71BCD767E0085C7B5 /* KIFUITestActor+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BACB0C61BCD767E0085C7B5 /* KIFUITestActor+Helper.m */; };
 		342F902302C1CF0FD342AB93 /* NSDate+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 342F97C153D8524B132D0927 /* NSDate+Util.m */; };
 		342F9061CC93426E7F8579A2 /* ARFeedImageLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 342F966C989CF0BE97711FB6 /* ARFeedImageLoader.m */; };
 		342F906FD605E75158D32876 /* ARSharingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 342F9DC4018D17E7378DA607 /* ARSharingController.m */; };
@@ -653,8 +652,6 @@
 		1B44091A1BC803CB006BD605 /* Acceptance_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Acceptance_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B44091C1BC803CB006BD605 /* Acceptance_Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Acceptance_Tests.m; sourceTree = "<group>"; };
 		1B44091E1BC803CB006BD605 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1BACB0C51BCD767E0085C7B5 /* KIFUITestActor+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "KIFUITestActor+Helper.h"; sourceTree = "<group>"; };
-		1BACB0C61BCD767E0085C7B5 /* KIFUITestActor+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "KIFUITestActor+Helper.m"; sourceTree = "<group>"; };
 		219F7A9F64EBC1323D60D7CD /* Pods-Acceptance_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Acceptance_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Acceptance_Tests/Pods-Acceptance_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		29773A6F17B9749800FC89B3 /* ARHasImageBaseURL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARHasImageBaseURL.h; sourceTree = "<group>"; };
 		342F9005B8C4E89F9DA89E36 /* NSString+StringCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+StringCase.h"; sourceTree = "<group>"; };
@@ -1770,8 +1767,6 @@
 			isa = PBXGroup;
 			children = (
 				CE6F61DC1C21D34200964C07 /* Screens */,
-				1BACB0C51BCD767E0085C7B5 /* KIFUITestActor+Helper.h */,
-				1BACB0C61BCD767E0085C7B5 /* KIFUITestActor+Helper.m */,
 				1B44091C1BC803CB006BD605 /* Acceptance_Tests.m */,
 				1B44091E1BC803CB006BD605 /* Info.plist */,
 			);
@@ -3970,9 +3965,9 @@
 			isa = PBXGroup;
 			children = (
 				CE6F61DD1C21D37800964C07 /* Welcome_screen.h */,
+				CE6F61DE1C21D37800964C07 /* Welcome_screen.m */,
 				CEA934CE1C2988370017C77D /* Artwork_screen.h */,
 				CEA934CF1C2988370017C77D /* Artwork_screen.m */,
-				CE6F61DE1C21D37800964C07 /* Welcome_screen.m */,
 				CE6F61E01C21D44300964C07 /* Basic_screen.h */,
 				CE6F61E11C21D44300964C07 /* Basic_screen.m */,
 				CE6F61E31C21D4D500964C07 /* Navigation_module.h */,
@@ -4584,7 +4579,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE6F61DF1C21D37800964C07 /* Welcome_screen.m in Sources */,
-				1BACB0C71BCD767E0085C7B5 /* KIFUITestActor+Helper.m in Sources */,
 				CE6F61E21C21D44300964C07 /* Basic_screen.m in Sources */,
 				CE6F61E81C21D5D200964C07 /* Search_module.m in Sources */,
 				CEA934D01C2988370017C77D /* Artwork_screen.m in Sources */,
