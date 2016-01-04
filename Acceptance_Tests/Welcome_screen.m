@@ -1,20 +1,21 @@
-//  Welcome_screen.h
-//  Artsy
-//
-//  Created by Iryna Krasylnykova on 12/17/15.
-//  Copyright © 2015 Artsy. All rights reserved.
-
 #import "Welcome_screen.h"
+#import "KIFUITestActor+Helper.h"
 
 @implementation Welcome_screen
 
 static NSString *_withoutAccount = @"TRY WITHOUT AN ACCOUNT";
 
--(void)tryWithoutAccount {
-    
-    if ([[[UIApplication sharedApplication] keyWindow] accessibilityElementWithLabel:@"SIGN UP"]) {
-        [tester tapViewWithAccessibilityLabel:_withoutAccount];
-    };
+- (void)tryWithoutAccount {
+
+    NSInteger obj = [tester existsViewWithAccessibilityLabel:@"SignUpButton"];
+    switch (obj) {
+        case 1:
+            [tester tapViewWithAccessibilityLabel:_withoutAccount];
+            break;
+        case 0:
+            [tester waitForViewWithAccessibilityLabel:@"HomeButton" traits:UIAccessibilityTraitSelected];
+            break;
+    }
 }
 
 @end

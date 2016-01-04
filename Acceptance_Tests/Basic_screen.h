@@ -1,9 +1,3 @@
-//  Basic_screen.h
-//  Artsy
-//
-//  Created by Iryna Krasylnykova on 12/17/15.
-//  Copyright © 2015 Artsy. All rights reserved.
-
 #import <KIF/KIF.h>
 #import "KIFUITestActor.h"
 
@@ -11,5 +5,22 @@
 
 -(void)openSearch;
 -(void)goBackToPreviousScreen;
+-(void)dismissAlert;
+
+@end
+
+@interface Basic_screen (Navigation)
+
+-(void)navigateToHomePage;
+
+@end
+
+@interface Basic_screen (Search)
+
+-(void)searchByQuery:(NSString *)searchQuery;
+-(void)searchResultsDidLoad;
+-(id)getListOfSearchResults;
+-(void)openArtistSearchResult:(NSString *)searchResult;
+-(void)openArtworkSearchResult:(NSString *)searchResult;
 
 @end

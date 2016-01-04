@@ -104,6 +104,9 @@
     [self.signUpButton addTarget:self action:@selector(signUp:) forControlEvents:UIControlEventTouchUpInside];
     [self.signUpButton constrainTopSpaceToView:self.pageControl predicate:@"29"];
     [self.signUpButton alignCenterXWithView:self.view predicate:@"0"];
+    [self.signUpButton setAccessibilityLabel:@"SignUpButton"];
+    [self.signUpButton setUserInteractionEnabled:YES];
+    [self.signUpButton setIsAccessibilityElement:YES];
 
     self.trialButton = [[ARClearFlatButton alloc] init];
     [self.view addSubview:self.trialButton];

@@ -1,17 +1,16 @@
-//  Search_module.m
-//  Artsy
-//
-//  Created by Iryna Krasylnykova on 12/17/15.
-//  Copyright © 2015 Artsy. All rights reserved.
+#import "Basic_screen.h"
 
-#import "Search_module.h"
-
-@implementation Search_module
+@implementation Basic_screen (Search)
 
 static NSString *searchTextField = @"SearchField";
+NSMutableArray *_listOfSearchResults;
+NSString *_searchQuery;
+NSString *_artist;
+NSString *_artwork;
+UITableView *_tableView;
 
--(void)viewDidLoad {
-    
+-(void)searchResultsDidLoad {
+    [tester waitForViewWithAccessibilityLabel:@"SearchResultsTableView"];
 }
 
 -(void)searchByQuery:(NSString *)searchQuery {
@@ -34,20 +33,18 @@ static NSString *searchTextField = @"SearchField";
     return _listOfSearchResults;
 }
 
--(void)openArtistSearchResult:(NSString *)searchResult {
-
-//    NSIndexPath *first = [NSIndexPath indexPathForRow:0 inSection:0];
-//            [tester tapRowAtIndexPath:first inTableViewWithAccessibilityIdentifier:@"SearchResultsTableView"];
+-(void)openArtistSearchResult:(NSString *)searchQuery {
     
-    NSString *new = searchResult;
-    NSString* nameString = [new componentsSeparatedByString: @" "][0];
-    NSString* surnameString = [new componentsSeparatedByString:@" "][1];
-
-    NSMutableArray *results = [[Search_module alloc] getListOfSearchResults];
+    NSString* query = searchQuery;
+    
+    NSString* first = [query componentsSeparatedByString: @" "][0];
+    NSString* second = [query componentsSeparatedByString:@" "][1];
+    
+    NSMutableArray *results = [[Basic_screen alloc] getListOfSearchResults];
     NSInteger i = [results count];
     for (NSInteger number = 0; number < i; number++) {
         NSString *result = [results objectAtIndex:number];
-        if ([result containsString :nameString] && [result containsString:surnameString]) {
+        if ([result containsString: first] && [result containsString:second]) {
             NSIndexPath *index = [NSIndexPath indexPathForRow:number inSection:0];
             [tester tapRowAtIndexPath:index inTableViewWithAccessibilityIdentifier:@"SearchResultsTableView"];
             break;
@@ -55,15 +52,14 @@ static NSString *searchTextField = @"SearchField";
     }
 }
 
--(void)openArtworkSearchResult:(NSString *)searchResult {
+-(void)openArtworkSearchResult:(NSString *)searchQuery {
     
-    NSMutableArray *results = [[Search_module alloc] getListOfSearchResults];
+    NSMutableArray *results = [[Basic_screen alloc] getListOfSearchResults];
     NSInteger i = [results count];
     for (NSInteger number = 0; number < i; number++) {
         NSIndexPath *index = [NSIndexPath indexPathForRow:number inSection:0];
         UITableViewCell *cell = (UITableViewCell*)[tester waitForCellAtIndexPath:index   inTableViewWithAccessibilityIdentifier:@"SearchResultsTableView"];
-        
-        if ([cell.textLabel.text hasPrefix:searchResult]) {
+        if ([cell.textLabel.text hasPrefix:searchQuery]) {
             [tester tapRowAtIndexPath:index inTableViewWithAccessibilityIdentifier:@"SearchResultsTableView"];
             break;
         }
@@ -71,3 +67,4 @@ static NSString *searchTextField = @"SearchField";
 }
 
 @end
+

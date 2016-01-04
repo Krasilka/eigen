@@ -5,8 +5,6 @@
 #import <Expecta/Expecta.h>
 #import "Welcome_screen.h"
 #import "Basic_screen.h"
-#import "Search_module.h"
-#import "Navigation_module.h"
 #import "Artist_screen.h"
 #import "Artwork_screen.h"
 
@@ -20,51 +18,56 @@ SpecBegin (Search)
 
 describe(@"Search", ^{
     
-        beforeAll( ^{
-            [[Welcome_screen new] tryWithoutAccount];
-//            [[Home_screen new] viewDidLoad];
-        });
+    __block Basic_screen *user;
+    __block Welcome_screen *choose;
+    __block Artwork_screen *artworkResult;
+    __block Artist_screen *artistResult;
     
-        beforeEach( ^{
-            [[Basic_screen new] openSearch];
-        });
+    beforeAll( ^{
+        user = [[Basic_screen alloc] init];
+        choose = [[Welcome_screen alloc] init];
+        [choose tryWithoutAccount];
+        [user dismissAlert];
+    });
+    
+    beforeEach( ^{
+        [user openSearch];
+    });
     
     context(@"for artwork", ^{
+        before(^{
+            artworkResult = [[Artwork_screen alloc] init];
+            [user searchByQuery:artworkSearchQuery];
+            [user getListOfSearchResults];
+            [user openArtworkSearchResult:artistOfArtwork];
+        });
+        
     it(@"returns correct artist's name on artwork sreen", ^{
+        NSString* result = [artworkResult getArtistOfArtwork];
         
-        [[Search_module new] searchByQuery:artworkSearchQuery];
-        
-        [tester waitForTimeInterval:5];
-        //should be viewDidLoad method here
-
-        [[Search_module new] getListOfSearchResults];
-        [[Search_module new] openArtworkSearchResult:artistOfArtwork];
-        
-        [tester waitForTimeInterval:5];
-        
-        expect([[Artwork_screen new] getArtistOfArtwork]).to.equal(artistOfArtwork.uppercaseString);
-    
+        expect(result.uppercaseString).to.equal(artistOfArtwork.uppercaseString);
     });
     });
     
     context(@"for artist", ^{
-    it(@"returns correct artist's name, nationality and years on artist screen", ^{
-
-        [[Search_module new] searchByQuery:artistSearchQuery];
-        [[Search_module new] openArtistSearchResult:artistSearchQuery];
-        
-        [tester waitForTimeInterval:5];
-        
-        expect([[Artist_screen new] getArtistName]).to.equal(artistName.uppercaseString);
-        expect([[Artist_screen new] getArtistInfo]).to.equal(artistInfo);
-    });
-    });
-
-        afterEach( ^{
-            Navigation_module *navigate = [[Navigation_module alloc] init];
-            [navigate toHomePage];
+        before(^{
+            artistResult = [[Artist_screen alloc] init];
+            [user searchByQuery:artistSearchQuery];
+            [user openArtistSearchResult:artistSearchQuery];
         });
-});
+        
+    it(@"returns correct artist's name, nationality and years on artist screen", ^{
+        NSString* artist = [artistResult getArtistName];
+        NSString* info = [artistResult getArtistInfo];
+        
+        expect(artist.uppercaseString).to.equal(artistName.uppercaseString);
+        expect(info.uppercaseString).to.equal(artistInfo.uppercaseString);
+    });
+    });
 
+    afterEach( ^{
+        [user navigateToHomePage];
+    });
+});
 
 SpecEnd
